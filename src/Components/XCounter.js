@@ -9,7 +9,7 @@ export default function XCounter() {
             <h1 className={styles.counterHeading}>Counter App</h1>
             <p className={styles.counterDisplay}>Count: {c}</p>
             <div className={styles.btn}>
-                <button onClick={setC((prev)=>prev+1)}>Increment</button>
+                <button onClick={()=>setC((prev)=>prev+1)}>Increment</button>
                 <button onClick={()=>{
                     setC((prev)=>prev-1)
                 }}>Decrement</button>
